@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- title here -->
+        <title>Fruits And Vegetables Website</title>
+        <!-- favicon here -->
+        <link
+            rel="shortcut icon"
+            href="images/favicon.png"
+            type="image/x-icon"
+        />
+        <!-- css here -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- font awesome cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- aos animation link here -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body>
+        <!-- =============== navbar here ============ -->
+        <header>
+            <nav id="navbar">
+                <div class="logo">
+                    <a href="#"
+                        ><i class="fa-solid fa-basket-shopping"></i> Delicacy</a
+                    >
+                </div>
+                <ul class="links">
+                    <h2>Menu Links</h2>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#popular-products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#customers">Customer's</a></li>
+                </ul>
+                <div id="toggle"></div>
+                <button class="login-btn">Log In</button>
+            </nav>
+        </header>
+
+        <!-- =============== popup box here ============ -->
+        <div class="blur-bg-overlay"></div>
+        <div class="form-popup">
+            <i class="fa-solid fa-xmark close-btn"></i>
+            <div class="form-box login">
+                <div class="form-details">
+                    <h2>Welcome Back</h2>
+                    <p>
+                        Please log in using your personal information to stay
+                        connected with us.
+                    </p>
+                </div>
+                <div class="form-content">
+                    <h2>LOGIN</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required />
+                            <label>Email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required />
+                            <label>Password</label>
+                        </div>
+                        <a href="#" class="forgot-pass">Forgot Password?</a>
+                        <button type="submit">Log In</button>
+                    </form>
+                    <div class="button-link">
+                        Don't have an account?
+                        <a href="#" id="signup-link">Signup</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup here -->
+            <div class="form-box signup">
+                <div class="form-details">
+                    <h2>Create Account</h2>
+                    <p>
+                        To become a part of your community, please sign up using
+                        your personal information.
+                    </p>
+                </div>
+                <div class="form-content">
+                    <h2>SIGNUP</h2>
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" required />
+                            <label>Enter your email</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" required />
+                            <label>Create password</label>
+                        </div>
+                        <div class="policy-text">
+                            <input type="checkbox" id="policy" />
+                            <label for="policy"
+                                >I agree the
+                                <a href="#">Terms & Conditions</a></label
+                            >
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div class="button-link">
+                        Already have an account?
+                        <a href="#" id="login-link">Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== header content here ============ -->
+        <div class="header-content" id="home">
+            <div class="header-text" data-aos="fade-right">
+                <span>we are delicacy</span>
+                <h1>Choose delicacy the best healthy chicken salad</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Placeat, accusantium eum alias officiis tempore eius. Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+                    pariatur optio asperiores rerum ullam dolor quasi, nam
+                    temporibus quae repellat.
+                </p>
+                <button>
+                    Shop Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="header-img" data-aos="fade-left">
+                <img src="images/header-image.png" alt="banner image" />
+            </div>
+        </div>
+
+        <!-- =============== Categories here ============ -->
+        <section id="categories">
+            <div class="categories-header">
+                <div class="categories-headings">
+                    <h2>Browse Our Hottest</h2>
+                    <h3>Categories</h3>
+                </div>
+                <div class="categories-button">
+                    <button>
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="categories-products">
+                <div class="cate-product frist-product" data-aos="zoom-in-up">
+                    <img
+                        src="images/categories-fruits.png"
+                        alt="product image"
+                    />
+                    <span>Fruits</span>
+                    <p>22 Items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="cate-product second-product" data-aos="zoom-in-up">
+                    <img src="images/categories-vege.png" alt="product image" />
+                    <span>Vegetables</span>
+                    <p>22 Items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="cate-product third-product" data-aos="zoom-in-up">
+                    <img
+                        src="images/categories-drinks.png"
+                        alt="product image"
+                    />
+                    <span>Drinks</span>
+                    <p>22 Items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="cate-product fourth-product" data-aos="zoom-in-up">
+                    <img src="images/categeries-nuts.png" alt="product image" />
+                    <span>Fresh Nuts</span>
+                    <p>22 Items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                <div class="cate-product fifth-product" data-aos="zoom-in-up">
+                    <img
+                        src="images/categories-chili.png"
+                        alt="product image"
+                    />
+                    <span>Spices</span>
+                    <p>22 Items</p>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== popular product here ============ -->
+        <section id="popular-products">
+            <div class="popular-header">
+                <div class="popular-headings">
+                    <h2>Most Pupolar <span>Products</span></h2>
+                </div>
+                <div class="popular-button">
+                    <button>
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="popular-boxs">
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-1.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-2.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in" data-aos="zoom-in">
+                    <img src="images/popular-3.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-4.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-5.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-6.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-7.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-8.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+                <div class="popular-box" data-aos="zoom-in">
+                    <img src="images/popular-9.png" alt="product image" />
+                    <span class="top-span">Fresh Items</span>
+                    <h4>Farm Fresh Organic Fruits 250g</h4>
+                    <p><span class="bottom-span">$7.99</span>/kg</p>
+                    <i class="fa-solid fa-cart-shopping cart"></i>
+                    <i class="fa-regular fa-heart heart"></i>
+                    <div>-25%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== popular product here ============ -->
+        <section id="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-img" data-aos="fade-right">
+                    <img src="images/categories-vege.png" alt="image" />
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>You can know about us</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nisi eius provident quas quasi tenetur corporis, vitae
+                        voluptas possimus beatae quam. Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit. Nemo, optio.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Non, delectus! Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Reiciendis, consectetur!
+                    </p>
+                    <button>
+                        Shop Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== customers here ============ -->
+        <section id="customers">
+            <h2>Why Customer's Love Us</h2>
+            <div class="customers-container">
+                <div class="customers-profile" data-aos="fade-right">
+                    <i class="fa-solid fa-quote-left quetation"></i>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Blanditiis maxime quis atque sint, explicabo quae
+                        facilis commodi aperiam rerum aliquid illum iure ipsum
+                        similique? Non quaerat consequatur ratione fuga maiores!
+                    </p>
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img
+                                src="images/profile-1.webp"
+                                alt="profile picture"
+                            />
+                        </div>
+                        <span>Michele Smith</span>
+                    </div>
+                </div>
+                <div class="customers-profile" data-aos="zoom-in">
+                    <i class="fa-solid fa-quote-left quetation"></i>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Blanditiis maxime quis atque sint, explicabo quae
+                        facilis commodi aperiam rerum aliquid illum iure ipsum
+                        similique? Non quaerat consequatur ratione fuga maiores!
+                    </p>
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img
+                                src="images/profile-2.webp"
+                                alt="profile picture"
+                            />
+                        </div>
+                        <span>Jone Doe</span>
+                    </div>
+                </div>
+                <div class="customers-profile" data-aos="fade-left">
+                    <i class="fa-solid fa-quote-left quetation"></i>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Blanditiis maxime quis atque sint, explicabo quae
+                        facilis commodi aperiam rerum aliquid illum iure ipsum
+                        similique? Non quaerat consequatur ratione fuga maiores!
+                    </p>
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img
+                                src="images/profile-3.webp"
+                                alt="profile picture"
+                            />
+                        </div>
+                        <span>Angel Spread</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== footer here ============ -->
+        <section id="footer">
+            <div class="icons-and-logo">
+                <div class="logo">
+                    <a href="#"
+                        ><i class="fa-solid fa-basket-shopping"></i> Delicacy</a
+                    >
+                </div>
+                <p>Harashpur/Madhabpur/Habiganj/Bangladesh</p>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+            <div class="footer-categories">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Fruits & Vegetables</a></li>
+                    <li><a href="#">Dairy Products</a></li>
+                    <li><a href="#">Packege Food</a></li>
+                    <li><a href="#">Bevarage</a></li>
+                </ul>
+            </div>
+            <div class="useful-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Payment & Tax</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h4>Newsletter</h4>
+                <p>Ger 10% Discount With Email Newsletter</p>
+                <form>
+                    <i class="fa-solid fa-envelope email-icon"></i>
+                    <input type="email" name="email" placeholder="Your Email" />
+                    <i class="fa-solid fa-arrow-right arrow-icon"></i>
+                </form>
+                <hr />
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 140,
+                duration: 1000,
+            });
+        </script>
+    </body>
+</html>
